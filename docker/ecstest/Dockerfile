@@ -2,7 +2,7 @@ FROM node:18-alpine AS installer
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY docker* ./
 
 RUN npm install 
 

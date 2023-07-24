@@ -4,7 +4,7 @@ services:
     ecstest:
      build:
        context: ../
-       dockerfile: ./docker/ui/Dockerfile
+       dockerfile: ./docker/ecstest/Dockerfile
        args:
         environment: ${environment}
         product: ${product}

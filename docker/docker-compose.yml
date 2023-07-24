@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  node:
+    build:
+      context: ../
+      dockerfile: ./docker/node/Dockerfile
+      args:
+        environment: ${environment}
+        product: ${product}
+        service: ${service}
+        executePath: ${executePath}
+        BUILD_NUMBER: ${BUILD_NUMBER}
+        joker: ${joker}
